@@ -1,0 +1,62 @@
+[0.008s] Invoking command in '/home/daeyun/Desktop/github_repositories/ros2_ws/build/my_first_ros_rclcpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/daeyun/Desktop/github_repositories/ros2_ws/build/my_first_ros_rclcpp_pkg -- -j16 -l16
+[0.021s] -- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.094s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.098s] -- Found rclcpp: 16.0.3 (/opt/ros/humble/share/rclcpp/cmake)
+[0.116s] -- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.117s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.121s] -- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.127s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.136s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.171s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.172s] -- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.237s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.332s] -- Found ament_lint_auto: 0.12.5 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.376s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.376s] -- Configured cppcheck include dirs: 
+[0.376s] -- Configured cppcheck exclude dirs and/or files: 
+[0.376s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.377s] -- Added test 'lint_cmake' to check CMake code style
+[0.378s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.382s] -- Added test 'uncrustify' to check C / C++ code style
+[0.382s] -- Configured uncrustify additional arguments: 
+[0.382s] -- Added test 'xmllint' to check XML markup files
+[0.383s] -- Configuring done
+[0.389s] -- Generating done
+[0.390s] -- Build files have been written to: /home/daeyun/Desktop/github_repositories/ros2_ws/build/my_first_ros_rclcpp_pkg
+[0.408s] [ 25%] [32mBuilding CXX object CMakeFiles/helloworld_subscriber.dir/src/helloworld_subscriber.cpp.o[0m
+[0.408s] [ 50%] [32mBuilding CXX object CMakeFiles/helloworld_publisher.dir/src/helloworld_publisher.cpp.o[0m
+[1.845s] [01m[K/home/daeyun/Desktop/github_repositories/ros2_ws/src/my_first_ros_rclcpp_pkg/src/helloworld_publisher.cpp:[m[K In constructor ‘[01m[KHelloworldPublisher::HelloworldPublisher()[m[K’:
+[1.845s] [01m[K/home/daeyun/Desktop/github_repositories/ros2_ws/src/my_first_ros_rclcpp_pkg/src/helloworld_publisher.cpp:15:42:[m[K [01;31m[Kerror: [m[Kexpression cannot be used as a function
+[1.845s]    15 |     : Node("helloworld_publisher", [01;31m[Kcount_(0)[m[K)
+[1.845s]       |                                    [01;31m[K~~~~~~^~~[m[K
+[1.845s] [01m[K/home/daeyun/Desktop/github_repositories/ros2_ws/src/my_first_ros_rclcpp_pkg/src/helloworld_publisher.cpp:17:32:[m[K [01;31m[Kerror: [m[K‘[01m[KQos[m[K’ is not a member of ‘[01m[Krclcpp[m[K’; did you mean ‘[01m[KQoS[m[K’?
+[1.845s]    17 |     auto qos_profile = rclcpp::[01;31m[KQos[m[K(rclcpp:KeepLast(10));
+[1.845s]       |                                [01;31m[K^~~[m[K
+[1.845s]       |                                [32m[KQoS[m[K
+[1.845s] [01m[K/home/daeyun/Desktop/github_repositories/ros2_ws/src/my_first_ros_rclcpp_pkg/src/helloworld_publisher.cpp:17:42:[m[K [01;31m[Kerror: [m[Kfound ‘[01m[K:[m[K’ in nested-name-specifier, expected ‘[01m[K::[m[K’
+[1.845s]    17 |     auto qos_profile = rclcpp::Qos(rclcpp[01;31m[K:[m[KKeepLast(10));
+[1.845s]       |                                          [01;31m[K^[m[K
+[1.845s]       |                                          [32m[K::[m[K
+[1.877s] [01m[K/home/daeyun/Desktop/github_repositories/ros2_ws/src/my_first_ros_rclcpp_pkg/src/helloworld_subscriber.cpp:[m[K In constructor ‘[01m[KHelloworldSubscriber::HelloworldSubscriber()[m[K’:
+[1.877s] [01m[K/home/daeyun/Desktop/github_repositories/ros2_ws/src/my_first_ros_rclcpp_pkg/src/helloworld_subscriber.cpp:15:36:[m[K [01;31m[Kerror: [m[K‘[01m[KQos[m[K’ is not a member of ‘[01m[Krclcpp[m[K’; did you mean ‘[01m[KQoS[m[K’?
+[1.877s]    15 |         auto qos_profile = rclcpp::[01;31m[KQos[m[K(rclcpp:KeepLast(10));
+[1.877s]       |                                    [01;31m[K^~~[m[K
+[1.877s]       |                                    [32m[KQoS[m[K
+[1.877s] [01m[K/home/daeyun/Desktop/github_repositories/ros2_ws/src/my_first_ros_rclcpp_pkg/src/helloworld_subscriber.cpp:15:46:[m[K [01;31m[Kerror: [m[Kfound ‘[01m[K:[m[K’ in nested-name-specifier, expected ‘[01m[K::[m[K’
+[1.877s]    15 |         auto qos_profile = rclcpp::Qos(rclcpp[01;31m[K:[m[KKeepLast(10));
+[1.877s]       |                                              [01;31m[K^[m[K
+[1.877s]       |                                              [32m[K::[m[K
+[1.877s] [01m[K/home/daeyun/Desktop/github_repositories/ros2_ws/src/my_first_ros_rclcpp_pkg/src/helloworld_subscriber.cpp:16:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass HelloworldSubscriber[m[K’ has no member named ‘[01m[Kcreate_subscriber[m[K’; did you mean ‘[01m[Kcreate_subscription[m[K’?
+[1.877s]    16 |         helloworld_subscriber_ = this->[01;31m[Kcreate_subscriber[m[K<std_msgs::msg::String>(
+[1.877s]       |                                        [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[1.877s]       |                                        [32m[Kcreate_subscription[m[K
+[1.877s] [01m[K/home/daeyun/Desktop/github_repositories/ros2_ws/src/my_first_ros_rclcpp_pkg/src/helloworld_subscriber.cpp:16:79:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[1.877s]    16 |         helloworld_subscriber_ = this->create_subscriber<std_msgs::msg::String[01;31m[K>[m[K(
+[1.877s]       |                                                                               [01;31m[K^[m[K
+[2.178s] gmake[2]: *** [CMakeFiles/helloworld_subscriber.dir/build.make:76: CMakeFiles/helloworld_subscriber.dir/src/helloworld_subscriber.cpp.o] Error 1
+[2.178s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/helloworld_subscriber.dir/all] Error 2
+[2.178s] gmake[1]: *** Waiting for unfinished jobs....
+[2.209s] gmake[2]: *** [CMakeFiles/helloworld_publisher.dir/build.make:76: CMakeFiles/helloworld_publisher.dir/src/helloworld_publisher.cpp.o] Error 1
+[2.209s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/helloworld_publisher.dir/all] Error 2
+[2.209s] gmake: *** [Makefile:146: all] Error 2
+[2.210s] Invoked command in '/home/daeyun/Desktop/github_repositories/ros2_ws/build/my_first_ros_rclcpp_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/daeyun/Desktop/github_repositories/ros2_ws/build/my_first_ros_rclcpp_pkg -- -j16 -l16

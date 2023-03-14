@@ -1,0 +1,23 @@
+[01m[K/home/daeyun/Desktop/github_repositories/ros2_ws/src/my_first_ros_rclcpp_pkg/src/helloworld_publisher.cpp:[m[K In constructor ‘[01m[KHelloworldPublisher::HelloworldPublisher()[m[K’:
+[01m[K/home/daeyun/Desktop/github_repositories/ros2_ws/src/my_first_ros_rclcpp_pkg/src/helloworld_publisher.cpp:15:42:[m[K [01;31m[Kerror: [m[Kexpression cannot be used as a function
+   15 |     : Node("helloworld_publisher", [01;31m[Kcount_(0)[m[K)
+      |                                    [01;31m[K~~~~~~^~~[m[K
+[01m[K/home/daeyun/Desktop/github_repositories/ros2_ws/src/my_first_ros_rclcpp_pkg/src/helloworld_publisher.cpp:17:32:[m[K [01;31m[Kerror: [m[K‘[01m[KQos[m[K’ is not a member of ‘[01m[Krclcpp[m[K’; did you mean ‘[01m[KQoS[m[K’?
+   17 |     auto qos_profile = rclcpp::[01;31m[KQos[m[K(rclcpp:KeepLast(10));
+      |                                [01;31m[K^~~[m[K
+      |                                [32m[KQoS[m[K
+[01m[K/home/daeyun/Desktop/github_repositories/ros2_ws/src/my_first_ros_rclcpp_pkg/src/helloworld_publisher.cpp:17:42:[m[K [01;31m[Kerror: [m[Kfound ‘[01m[K:[m[K’ in nested-name-specifier, expected ‘[01m[K::[m[K’
+   17 |     auto qos_profile = rclcpp::Qos(rclcpp[01;31m[K:[m[KKeepLast(10));
+      |                                          [01;31m[K^[m[K
+      |                                          [32m[K::[m[K
+[01m[K/home/daeyun/Desktop/github_repositories/ros2_ws/src/my_first_ros_rclcpp_pkg/src/helloworld_subscriber.cpp:[m[K In constructor ‘[01m[KHelloworldSubscriber::HelloworldSubscriber()[m[K’:
+[01m[K/home/daeyun/Desktop/github_repositories/ros2_ws/src/my_first_ros_rclcpp_pkg/src/helloworld_subscriber.cpp:15:46:[m[K [01;31m[Kerror: [m[Kfound ‘[01m[K:[m[K’ in nested-name-specifier, expected ‘[01m[K::[m[K’
+   15 |         auto qos_profile = rclcpp::QoS(rclcpp[01;31m[K:[m[KKeepLast(10));
+      |                                              [01;31m[K^[m[K
+      |                                              [32m[K::[m[K
+gmake[2]: *** [CMakeFiles/helloworld_publisher.dir/build.make:76: CMakeFiles/helloworld_publisher.dir/src/helloworld_publisher.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/helloworld_publisher.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/helloworld_subscriber.dir/build.make:76: CMakeFiles/helloworld_subscriber.dir/src/helloworld_subscriber.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/helloworld_subscriber.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

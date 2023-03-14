@@ -1,0 +1,29 @@
+[0.008s] Invoking command in '/home/daeyun/Desktop/github_repositories/ros2_ws/build/my_first_ros_rclcpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/daeyun/Desktop/github_repositories/ros2_ws/build/my_first_ros_rclcpp_pkg -- -j16 -l16
+[0.027s] [35m[1mConsolidate compiler generated dependencies of target helloworld_publisher[0m
+[0.027s] [35m[1mConsolidate compiler generated dependencies of target helloworld_subscriber[0m
+[0.035s] [ 25%] [32mBuilding CXX object CMakeFiles/helloworld_subscriber.dir/src/helloworld_subscriber.cpp.o[0m
+[0.037s] [ 50%] [32mBuilding CXX object CMakeFiles/helloworld_publisher.dir/src/helloworld_publisher.cpp.o[0m
+[1.448s] [01m[K/home/daeyun/Desktop/github_repositories/ros2_ws/src/my_first_ros_rclcpp_pkg/src/helloworld_publisher.cpp:[m[K In constructor ‘[01m[KHelloworldPublisher::HelloworldPublisher()[m[K’:
+[1.449s] [01m[K/home/daeyun/Desktop/github_repositories/ros2_ws/src/my_first_ros_rclcpp_pkg/src/helloworld_publisher.cpp:15:42:[m[K [01;31m[Kerror: [m[Kexpression cannot be used as a function
+[1.449s]    15 |     : Node("helloworld_publisher", [01;31m[Kcount_(0)[m[K)
+[1.449s]       |                                    [01;31m[K~~~~~~^~~[m[K
+[1.449s] [01m[K/home/daeyun/Desktop/github_repositories/ros2_ws/src/my_first_ros_rclcpp_pkg/src/helloworld_publisher.cpp:17:32:[m[K [01;31m[Kerror: [m[K‘[01m[KQos[m[K’ is not a member of ‘[01m[Krclcpp[m[K’; did you mean ‘[01m[KQoS[m[K’?
+[1.449s]    17 |     auto qos_profile = rclcpp::[01;31m[KQos[m[K(rclcpp:KeepLast(10));
+[1.449s]       |                                [01;31m[K^~~[m[K
+[1.449s]       |                                [32m[KQoS[m[K
+[1.449s] [01m[K/home/daeyun/Desktop/github_repositories/ros2_ws/src/my_first_ros_rclcpp_pkg/src/helloworld_publisher.cpp:17:42:[m[K [01;31m[Kerror: [m[Kfound ‘[01m[K:[m[K’ in nested-name-specifier, expected ‘[01m[K::[m[K’
+[1.449s]    17 |     auto qos_profile = rclcpp::Qos(rclcpp[01;31m[K:[m[KKeepLast(10));
+[1.449s]       |                                          [01;31m[K^[m[K
+[1.449s]       |                                          [32m[K::[m[K
+[1.449s] [01m[K/home/daeyun/Desktop/github_repositories/ros2_ws/src/my_first_ros_rclcpp_pkg/src/helloworld_subscriber.cpp:[m[K In constructor ‘[01m[KHelloworldSubscriber::HelloworldSubscriber()[m[K’:
+[1.449s] [01m[K/home/daeyun/Desktop/github_repositories/ros2_ws/src/my_first_ros_rclcpp_pkg/src/helloworld_subscriber.cpp:15:46:[m[K [01;31m[Kerror: [m[Kfound ‘[01m[K:[m[K’ in nested-name-specifier, expected ‘[01m[K::[m[K’
+[1.449s]    15 |         auto qos_profile = rclcpp::QoS(rclcpp[01;31m[K:[m[KKeepLast(10));
+[1.449s]       |                                              [01;31m[K^[m[K
+[1.449s]       |                                              [32m[K::[m[K
+[1.818s] gmake[2]: *** [CMakeFiles/helloworld_publisher.dir/build.make:76: CMakeFiles/helloworld_publisher.dir/src/helloworld_publisher.cpp.o] Error 1
+[1.818s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/helloworld_publisher.dir/all] Error 2
+[1.818s] gmake[1]: *** Waiting for unfinished jobs....
+[3.057s] gmake[2]: *** [CMakeFiles/helloworld_subscriber.dir/build.make:76: CMakeFiles/helloworld_subscriber.dir/src/helloworld_subscriber.cpp.o] Error 1
+[3.057s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/helloworld_subscriber.dir/all] Error 2
+[3.057s] gmake: *** [Makefile:146: all] Error 2
+[3.059s] Invoked command in '/home/daeyun/Desktop/github_repositories/ros2_ws/build/my_first_ros_rclcpp_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/daeyun/Desktop/github_repositories/ros2_ws/build/my_first_ros_rclcpp_pkg -- -j16 -l16

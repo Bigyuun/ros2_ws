@@ -1,0 +1,21 @@
+[0.008s] Invoking command in '/home/daeyun/Desktop/github_repositories/ros2_ws/build/my_first_ros_rclcpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/daeyun/Desktop/github_repositories/ros2_ws/build/my_first_ros_rclcpp_pkg -- -j16 -l16
+[0.028s] Invoked command in '/home/daeyun/Desktop/github_repositories/ros2_ws/build/my_first_ros_rclcpp_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/daeyun/Desktop/github_repositories/ros2_ws/build/my_first_ros_rclcpp_pkg -- -j16 -l16
+[0.040s] Invoking command in '/home/daeyun/Desktop/github_repositories/ros2_ws/build/my_first_ros_rclcpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/daeyun/Desktop/github_repositories/ros2_ws/build/my_first_ros_rclcpp_pkg
+[0.044s] -- Install configuration: ""
+[0.044s] -- Execute custom install script
+[0.044s] -- Up-to-date symlink: /home/daeyun/Desktop/github_repositories/ros2_ws/install/my_first_ros_rclcpp_pkg/share/ament_index/resource_index/package_run_dependencies/my_first_ros_rclcpp_pkg
+[0.044s] -- Up-to-date symlink: /home/daeyun/Desktop/github_repositories/ros2_ws/install/my_first_ros_rclcpp_pkg/share/ament_index/resource_index/parent_prefix_path/my_first_ros_rclcpp_pkg
+[0.044s] -- Up-to-date symlink: /home/daeyun/Desktop/github_repositories/ros2_ws/install/my_first_ros_rclcpp_pkg/share/my_first_ros_rclcpp_pkg/environment/ament_prefix_path.sh
+[0.044s] -- Up-to-date symlink: /home/daeyun/Desktop/github_repositories/ros2_ws/install/my_first_ros_rclcpp_pkg/share/my_first_ros_rclcpp_pkg/environment/ament_prefix_path.dsv
+[0.044s] -- Up-to-date symlink: /home/daeyun/Desktop/github_repositories/ros2_ws/install/my_first_ros_rclcpp_pkg/share/my_first_ros_rclcpp_pkg/environment/path.sh
+[0.044s] -- Up-to-date symlink: /home/daeyun/Desktop/github_repositories/ros2_ws/install/my_first_ros_rclcpp_pkg/share/my_first_ros_rclcpp_pkg/environment/path.dsv
+[0.045s] -- Up-to-date symlink: /home/daeyun/Desktop/github_repositories/ros2_ws/install/my_first_ros_rclcpp_pkg/share/my_first_ros_rclcpp_pkg/local_setup.bash
+[0.045s] -- Up-to-date symlink: /home/daeyun/Desktop/github_repositories/ros2_ws/install/my_first_ros_rclcpp_pkg/share/my_first_ros_rclcpp_pkg/local_setup.sh
+[0.045s] -- Up-to-date symlink: /home/daeyun/Desktop/github_repositories/ros2_ws/install/my_first_ros_rclcpp_pkg/share/my_first_ros_rclcpp_pkg/local_setup.zsh
+[0.045s] -- Up-to-date symlink: /home/daeyun/Desktop/github_repositories/ros2_ws/install/my_first_ros_rclcpp_pkg/share/my_first_ros_rclcpp_pkg/local_setup.dsv
+[0.045s] -- Symlinking: /home/daeyun/Desktop/github_repositories/ros2_ws/install/my_first_ros_rclcpp_pkg/share/my_first_ros_rclcpp_pkg/package.dsv
+[0.049s] -- Up-to-date symlink: /home/daeyun/Desktop/github_repositories/ros2_ws/install/my_first_ros_rclcpp_pkg/share/ament_index/resource_index/packages/my_first_ros_rclcpp_pkg
+[0.049s] -- Up-to-date symlink: /home/daeyun/Desktop/github_repositories/ros2_ws/install/my_first_ros_rclcpp_pkg/share/my_first_ros_rclcpp_pkg/cmake/my_first_ros_rclcpp_pkgConfig.cmake
+[0.049s] -- Up-to-date symlink: /home/daeyun/Desktop/github_repositories/ros2_ws/install/my_first_ros_rclcpp_pkg/share/my_first_ros_rclcpp_pkg/cmake/my_first_ros_rclcpp_pkgConfig-version.cmake
+[0.049s] -- Up-to-date symlink: /home/daeyun/Desktop/github_repositories/ros2_ws/install/my_first_ros_rclcpp_pkg/share/my_first_ros_rclcpp_pkg/package.xml
+[0.051s] Invoked command in '/home/daeyun/Desktop/github_repositories/ros2_ws/build/my_first_ros_rclcpp_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/daeyun/Desktop/github_repositories/ros2_ws/build/my_first_ros_rclcpp_pkg
