@@ -22,8 +22,8 @@ private:
   void publish_random_arithmetic_arguments();
   void update_parameter();
 
-  float min_random_num;
-  float max_random_num;
+  float min_random_num_;
+  float max_random_num_;
 
   rclcpp::Publisher<ArithmeticArgument>::SharedPtr arithmetic_argument_publisher_;
   rclcpp::TimerBase::SharedPtr timer_;
