@@ -27,6 +27,8 @@ include_directories(include)
 # Build
 add_executable(argument src/arithmetic/argument.cpp)
 
+# add_executable(calculator src/calcul)
+
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
