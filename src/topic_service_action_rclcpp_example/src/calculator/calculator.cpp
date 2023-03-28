@@ -10,8 +10,6 @@
 #include "calculator/calculator.hpp"
 
 
-
-
 Calculator::Calculator(const rclcpp::NodeOptions & node_options)
 : Node("calculator", node_options),
   argument_a_(0.0),
@@ -85,12 +83,18 @@ Calculator::Calculator(const rclcpp::NodeOptions & node_options)
       "%s",
       argument_formula_.c_str());
   };
-  
 
-  arithmetic_argument_service_server_ = 
+  // create service_server
+  arithmetic_service_server_ = 
+  //this->create_service<ArithmeticOperator>("arithmetic_operator", get_arithmetic_operator);
     create_service<ArithmeticOperator>("arithmetic_operator", get_arithmetic_operator);
 
-
+  /*********************************
+   * @author DY
+   * @brief Action Server part
+   *********************************/
+  arithmetic_action_server_ = 
+    rclcpp_action::Client<ArithmeticChecker>();
 
 }
 
@@ -116,13 +120,13 @@ float Calculator::calculate_given_formula(
     RCLCPP_ERROR(
       this->get_logger(),
       "Please make sure arithmetic operator(PLUS, MINUS, MULTIPLY, DIVISION).");
-    argument_result_ = 0.0;
+    result = 0.0;
   }
 
   return result;
 }
 
-
+ 
 
 
 

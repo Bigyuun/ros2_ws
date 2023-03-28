@@ -12,7 +12,7 @@
 
 class Operator : public rclcpp::Node
 {
-public :
+public:
   using ArithmeticOperator = msg_srv_action_interface_example::srv::ArithmeticOperator;
   
   explicit Operator(const rclcpp::NodeOptions & node_options = rclcpp::NodeOptions());
@@ -21,7 +21,7 @@ public :
   void send_request();
 
 private:
-  rclcpp::Client<ArithmeticOperator>::SharedPtr arithmetic_argument_service_client_;  
+  rclcpp::Client<ArithmeticOperator>::SharedPtr arithmetic_service_client_;  
 };
 
 #endif  // ARITHMETIC__OPERATOR_HPP_

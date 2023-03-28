@@ -25,7 +25,7 @@ find_package(rclcpp_action REQUIRED)
 include_directories(include)
 
 # Build
-add_executable(argument src/arithmetic/argument.cpp)
+# add_executable(argument src/arithmetic/argument.cpp)
 
 # add_executable(calculator src/calcul)
 

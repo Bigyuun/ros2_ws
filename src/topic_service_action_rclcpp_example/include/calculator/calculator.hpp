@@ -41,7 +41,7 @@ private:
 
   rclcpp::Subscription<ArithmeticArgument>::SharedPtr arithmetic_argument_subscriber_;
 
-  rclcpp::Service<ArithmeticOperator>::SharedPtr arithmetic_argument_service_server_;
+  rclcpp::Service<ArithmeticOperator>::SharedPtr arithmetic_service_server_;
 
   rclcpp_action::Server<ArithmeticChecker>::SharedPtr arithmetic_argument_action_server_;
 
