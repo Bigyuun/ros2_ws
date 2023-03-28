@@ -1,0 +1,4 @@
+[0mCMake Error: The current CMakeCache.txt directory /home/daeyun/Desktop/github repositories_Bigyuun/ros2_ws/build/msg_srv_action_interface_example/CMakeCache.txt is different than the directory /home/daeyun/Desktop/github_repositories/ros2_ws/build/msg_srv_action_interface_example where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
+[0mCMake Error: The source directory "/home/daeyun/Desktop/github_repositories/ros2_ws/src/msg_srv_action_interface_example" does not exist.
+Specify --help for usage, or press the help button on the CMake GUI.[0m
+gmake: *** [Makefile:1179: cmake_check_build_system] Error 1

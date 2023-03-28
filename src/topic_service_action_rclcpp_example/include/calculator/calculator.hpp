@@ -41,9 +41,9 @@ private:
 
   rclcpp::Subscription<ArithmeticArgument>::SharedPtr arithmetic_argument_subscriber_;
 
-  rclcpp::Service<ArithmeticOperator>::SharedPtr arithmetic_argument_server_;
+  rclcpp::Service<ArithmeticOperator>::SharedPtr arithmetic_argument_service_server_;
 
-  rclcpp_action::Server<ArithmeticChecker>::SharedPtr arithmetic_action_server_;
+  rclcpp_action::Server<ArithmeticChecker>::SharedPtr arithmetic_argument_action_server_;
 
   float argument_a_;
   float argument_b_;
@@ -51,7 +51,7 @@ private:
   int8_t argument_operator_;
   float argument_result_;
 
-  std::string argument_fomula_;
+  std::string argument_formula_;
   std::vector<std::string> operator_;
 };
 #endif  // CALCULATOR__CALCULATOR_HPP_

@@ -1,0 +1,38 @@
+[0.009s] Invoking command in '/home/daeyun/Desktop/github repositories_Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/build/topic_service_action_rclcpp_example': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daeyun/ws_moveit2/install/moveit_configs_utils:/home/daeyun/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake /home/daeyun/Desktop/github repositories_Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/daeyun/Desktop/github repositories_Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/install/topic_service_action_rclcpp_example
+[0.079s] -- The C compiler identification is GNU 11.3.0
+[0.132s] -- The CXX compiler identification is GNU 11.3.0
+[0.138s] -- Detecting C compiler ABI info
+[0.181s] -- Detecting C compiler ABI info - done
+[0.185s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.185s] -- Detecting C compile features
+[0.185s] -- Detecting C compile features - done
+[0.188s] -- Detecting CXX compiler ABI info
+[0.237s] -- Detecting CXX compiler ABI info - done
+[0.240s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.240s] -- Detecting CXX compile features
+[0.241s] -- Detecting CXX compile features - done
+[0.246s] -- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.349s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter 
+[0.386s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.443s] -- Configuring incomplete, errors occurred!
+[0.443s] See also "/home/daeyun/Desktop/github repositories_Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/build/topic_service_action_rclcpp_example/CMakeFiles/CMakeOutput.log".
+[0.443s] [31mCMake Error at CMakeLists.txt:21 (find_package):
+[0.443s]   By not providing "Findmsg_srv_action_interface_example.cmake" in
+[0.443s]   CMAKE_MODULE_PATH this project has asked CMake to find a package
+[0.443s]   configuration file provided by "msg_srv_action_interface_example", but
+[0.443s]   CMake did not find one.
+[0.443s] 
+[0.443s]   Could not find a package configuration file provided by
+[0.443s]   "msg_srv_action_interface_example" with any of the following names:
+[0.443s] 
+[0.443s]     msg_srv_action_interface_exampleConfig.cmake
+[0.443s]     msg_srv_action_interface_example-config.cmake
+[0.443s] 
+[0.443s]   Add the installation prefix of "msg_srv_action_interface_example" to
+[0.443s]   CMAKE_PREFIX_PATH or set "msg_srv_action_interface_example_DIR" to a
+[0.443s]   directory containing one of the above files.  If
+[0.443s]   "msg_srv_action_interface_example" provides a separate development package
+[0.443s]   or SDK, be sure it has been installed.
+[0.443s] 
+[0.443s] [0m
+[0.446s] Invoked command in '/home/daeyun/Desktop/github repositories_Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/build/topic_service_action_rclcpp_example' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daeyun/ws_moveit2/install/moveit_configs_utils:/home/daeyun/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake /home/daeyun/Desktop/github repositories_Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/daeyun/Desktop/github repositories_Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/install/topic_service_action_rclcpp_example

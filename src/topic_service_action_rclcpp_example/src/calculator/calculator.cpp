@@ -50,7 +50,8 @@ Calculator::Calculator(const rclcpp::NodeOptions & node_options)
         argument_b_ = msg->argument_b;
 
         RCLCPP_INFO(
-          this->get_logger(), "Timestamp of the message : sec %ld nanosec %ld",
+          this->get_logger(),
+          "Timestamp of the message : sec %ld nanosec %ld",
           msg->stamp.sec,
           msg->stamp.nanosec);
 
@@ -59,19 +60,67 @@ Calculator::Calculator(const rclcpp::NodeOptions & node_options)
       }
     );
 
+  /*********************************
+   * @author DY
+   * @brief Service Server part
+   *********************************/
   auto get_arithmetic_operator = 
+  [this](
+  const std::shared_ptr<ArithmeticOperator::Request> request,
+  std::shared_ptr<ArithmeticOperator::Response> response) -> void
+  {
+    argument_operator_ = request->arithmetic_operator;
+    argument_result_ = this->calculate_given_formula(argument_a_, argument_b_, argument_operator_);
+    response->artimetic_result = argument_result_;
 
+    std::ostringstream oss;
+    oss << std::to_string(argument_a_) << ' ' <<
+           operator_[argument_operator_-1] << ' ' <<
+           std::to_string(argument_b_) << ' = ' <<
+           argument_result_ << std::endl;
+    argument_formula_ = oss.str();
 
+    RCLCPP_INFO(
+      this-> get_logger(),
+      "%s",
+      argument_formula_.c_str());
+  };
+  
 
-
-
-
-
+  arithmetic_argument_service_server_ = 
+    create_service<ArithmeticOperator>("arithmetic_operator", get_arithmetic_operator);
 
 
 
 }
 
+Calculator::~Calculator()
+{
+  
+}
+
+
+float Calculator::calculate_given_formula(
+  const float & a,
+  const float & b,
+  const int8_t & operators)
+{
+  float result = 0.0;
+  ArithmeticOperator::Request arithmetic_operator;
+
+  if     (operators == arithmetic_operator.PLUS)    {result = a+b;}
+  else if(operators == arithmetic_operator.MINUS)   {result = a-b;}
+  else if(operators == arithmetic_operator.MULTIPLY){result = a*b;}
+  else if(operators == arithmetic_operator.DIVISION){result = a/b;}
+  else{
+    RCLCPP_ERROR(
+      this->get_logger(),
+      "Please make sure arithmetic operator(PLUS, MINUS, MULTIPLY, DIVISION).");
+    argument_result_ = 0.0;
+  }
+
+  return result;
+}
 
 
 
