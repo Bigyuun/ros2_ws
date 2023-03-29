@@ -5,7 +5,7 @@
 Checker::Checker(float goal_sum, const rclcpp::NodeOptions & node_option)
 : Node("checker", node_option)
 {
-  arithmetic_argument_action_client_ = rclcpp_action::create_client<ArithmeticChecker>(
+  arithmetic_action_client_ = rclcpp_action::create_client<ArithmeticChecker>(
     this->get_node_base_interface(),
     this->get_node_graph_interface(),
     this->get_node_logging_interface(),
@@ -20,7 +20,7 @@ Checker::~Checker()
 
 }
 
-Checker::send_goal_total_sum(float goal_sum)
+void Checker::send_goal_total_sum(float goal_sum)
 {
   using namespace std::placeholders;
 
@@ -39,20 +39,37 @@ Checker::send_goal_total_sum(float goal_sum)
   auto send_goal_options = rclcpp_action::Client<ArithmeticChecker>::SendGoalOptions();
   send_goal_options.goal_response_callback = 
     std::bind(&Checker::get_arithmetic_action_goal, this, _1);
+
   send_goal_options.feedback_callback = 
     std::bind(&Checker::get_arithmetic_action_feedback, this, _1, _2);
+
   send_goal_options.result_callback = 
     std::bind(&Checker::get_arithmetic_action_result, this, _1);
+
   this->arithmetic_action_client_->async_send_goal(goal_msg, send_goal_options);
 }
 
+/**
+ * @brief ROS2 foxy
+*/
+// void Checker::get_arithmetic_action_goal(
+//   std::shared_future<GoalHandleArithmeticChecker::SharedPtr> future)
+// {
+//   auto goal_handle = future.get();
+//   if (!goal_handle){
+//     RCLCPP_WARN(this->get_logger(), "Action goal rejected");
+//   } else {
+//     RCLCPP_INFO(this->get_logger(), "Action goal accepted");
+//   }
+// }
 
-
+/**
+ * @brief ROS2 humble
+*/
 void Checker::get_arithmetic_action_goal(
-  std::shared_future<GoalHandleArithmeticChecker::SharedPtr> future)
+  GoalHandleArithmeticChecker::SharedPtr goal_handle)
 {
-  auto goal_handle = future.get();
-  if (!goal_handle){
+  if (goal_handle == nullptr) {
     RCLCPP_WARN(this->get_logger(), "Action goal rejected");
   } else {
     RCLCPP_INFO(this->get_logger(), "Action goal accepted");

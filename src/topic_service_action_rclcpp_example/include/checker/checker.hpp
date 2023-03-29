@@ -7,7 +7,7 @@
 
 #include "rclcpp/rclcpp.hpp"
 #include "rclcpp_action/rclcpp_action.hpp"
-#include "msg_srv_actoin_interface_example/action/arithmetic_checker.hpp"
+#include "msg_srv_action_interface_example/action/arithmetic_checker.hpp"
 
 
 class Checker : public rclcpp::Node
@@ -26,7 +26,15 @@ private:
 
   void send_goal_total_sum(float goal_sum);
   void get_arithmetic_action_goal(
-    std::shared_future<GoalHandleArithmeticChecker::SharedPtr> future);
+    /**
+     * @brief ROS2 foxy
+    */
+    // std::shared_future<GoalHandleArithmeticChecker::SharedPtr> future);
+
+    /**
+     * @brief ROS2 humble
+    */
+    GoalHandleArithmeticChecker::SharedPtr goal_handle);
   void get_arithmetic_action_feedback(
     GoalHandleArithmeticChecker::SharedPtr,
     const std::shared_ptr<const ArithmeticChecker::Feedback> feedback);

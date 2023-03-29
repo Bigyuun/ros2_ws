@@ -7,10 +7,9 @@
                 "/usr/include/**",
                 "/opt/ros/humble/include/**",
                 "./src/msg_srv_action_interface_example/",
-                "./src/msg_srv_action_interface_example/action/**",
-                "./src/msg_srv_action_interface_example/action/ArithmeticArgument.msg",
-                "./src/msg_srv_action_interface_example/srv/**",
                 "./src/msg_srv_action_interface_example/msg/**",
+                "./src/msg_srv_action_interface_example/srv/**",
+                "./src/msg_srv_action_interface_example/action/**",
                 "./src/topic_service_action_rclcpp_example/**",
                 "./src/topic_service_action_rclcpp_example/include/",
                 "./src/topic_service_action_rclcpp_example/src/"

@@ -43,7 +43,7 @@ private:
 
   rclcpp::Service<ArithmeticOperator>::SharedPtr arithmetic_service_server_;
 
-  rclcpp_action::Server<ArithmeticChecker>::SharedPtr arithmetic_argument_action_server_;
+  rclcpp_action::Server<ArithmeticChecker>::SharedPtr arithmetic_action_server_;
 
   float argument_a_;
   float argument_b_;

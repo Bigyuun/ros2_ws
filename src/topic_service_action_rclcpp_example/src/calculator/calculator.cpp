@@ -16,7 +16,7 @@ Calculator::Calculator(const rclcpp::NodeOptions & node_options)
   argument_b_(0.0),
   argument_operator_(0),
   argument_result_(0.0),
-  argument_fomula_("")
+  argument_formula_("")
 {
   RCLCPP_INFO(get_logger(), "Run calculator");
 
@@ -93,9 +93,18 @@ Calculator::Calculator(const rclcpp::NodeOptions & node_options)
    * @author DY
    * @brief Action Server part
    *********************************/
+  using namespace std::placeholders;
   arithmetic_action_server_ = 
-    rclcpp_action::Client<ArithmeticChecker>();
-
+    rclcpp_action::create_server<ArithmeticChecker>(
+      this->get_node_base_interface(),
+      this->get_node_clock_interface(),
+      this->get_node_logging_interface(),
+      this->get_node_waitables_interface(),
+      "arithmetic_checker",
+      std::bind(&Calculator::handle_goal, this, _1, _2),
+      std::bind(&Calculator::handle_cancle, this, _1),
+      std::bind(&Calculator::execute_checker, this, _1)
+    );
 }
 
 Calculator::~Calculator()
