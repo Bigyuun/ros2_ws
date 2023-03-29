@@ -11,7 +11,9 @@
                 "./src/msg_srv_action_interface_example/action/ArithmeticArgument.msg",
                 "./src/msg_srv_action_interface_example/srv/**",
                 "./src/msg_srv_action_interface_example/msg/**",
-                "./src/topic_service_action_rclcpp_example/**"
+                "./src/topic_service_action_rclcpp_example/**",
+                "./src/topic_service_action_rclcpp_example/include/",
+                "./src/topic_service_action_rclcpp_example/src/"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",
