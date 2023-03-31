@@ -1,0 +1,81 @@
+[0.014s] Invoking command in '/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/build/my_first_ros_rclcpp_pkg': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/my_first_ros_rclcpp_pkg -DCMAKE_INSTALL_PREFIX=/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/my_first_ros_rclcpp_pkg
+[0.043s] -- The C compiler identification is GNU 9.4.0
+[0.075s] -- The CXX compiler identification is GNU 9.4.0
+[0.078s] -- Check for working C compiler: /usr/bin/cc
+[0.118s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.119s] -- Detecting C compiler ABI info
+[0.160s] -- Detecting C compiler ABI info - done
+[0.168s] -- Detecting C compile features
+[0.168s] -- Detecting C compile features - done
+[0.169s] -- Check for working CXX compiler: /usr/bin/c++
+[0.217s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.218s] -- Detecting CXX compiler ABI info
+[0.268s] -- Detecting CXX compiler ABI info - done
+[0.280s] -- Detecting CXX compile features
+[0.280s] -- Detecting CXX compile features - done
+[0.282s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.296s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.296s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.401s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.427s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.431s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.473s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.492s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.541s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.577s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.578s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.579s] -- Looking for pthread.h
+[0.624s] -- Looking for pthread.h - found
+[0.624s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.672s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[0.672s] -- Looking for pthread_create in pthreads
+[0.710s] -- Looking for pthread_create in pthreads - not found
+[0.710s] -- Looking for pthread_create in pthread
+[0.753s] -- Looking for pthread_create in pthread - found
+[0.754s] -- Found Threads: TRUE  
+[0.854s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.900s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.900s] -- Configured cppcheck include dirs: 
+[0.900s] -- Configured cppcheck exclude dirs and/or files: 
+[0.901s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.902s] -- Added test 'lint_cmake' to check CMake code style
+[0.902s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[0.906s] -- Added test 'uncrustify' to check C / C++ code style
+[0.907s] -- Configured uncrustify additional arguments: 
+[0.907s] -- Added test 'xmllint' to check XML markup files
+[0.909s] -- Configuring done
+[0.914s] -- Generating done
+[0.915s] -- Build files have been written to: /home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/build/my_first_ros_rclcpp_pkg
+[0.920s] Invoked command in '/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/build/my_first_ros_rclcpp_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/my_first_ros_rclcpp_pkg -DCMAKE_INSTALL_PREFIX=/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/my_first_ros_rclcpp_pkg
+[0.922s] Invoking command in '/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/build/my_first_ros_rclcpp_pkg': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/build/my_first_ros_rclcpp_pkg -- -j20 -l20
+[0.946s] [35m[1mScanning dependencies of target helloworld_subscriber[0m
+[0.946s] [35m[1mScanning dependencies of target helloworld_publisher[0m
+[0.969s] [ 25%] [32mBuilding CXX object CMakeFiles/helloworld_subscriber.dir/src/helloworld_subscriber.cpp.o[0m
+[0.970s] [ 50%] [32mBuilding CXX object CMakeFiles/helloworld_publisher.dir/src/helloworld_publisher.cpp.o[0m
+[3.352s] [ 75%] [32m[1mLinking CXX executable helloworld_publisher[0m
+[3.455s] [ 75%] Built target helloworld_publisher
+[4.569s] [100%] [32m[1mLinking CXX executable helloworld_subscriber[0m
+[4.703s] [100%] Built target helloworld_subscriber
+[4.711s] Invoked command in '/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/build/my_first_ros_rclcpp_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/build/my_first_ros_rclcpp_pkg -- -j20 -l20
+[4.727s] Invoking command in '/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/build/my_first_ros_rclcpp_pkg': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/build/my_first_ros_rclcpp_pkg
+[4.732s] -- Install configuration: ""
+[4.732s] -- Installing: /home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/my_first_ros_rclcpp_pkg/lib/my_first_ros_rclcpp_pkg/helloworld_publisher
+[4.732s] -- Set runtime path of "/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/my_first_ros_rclcpp_pkg/lib/my_first_ros_rclcpp_pkg/helloworld_publisher" to ""
+[4.733s] -- Installing: /home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/my_first_ros_rclcpp_pkg/lib/my_first_ros_rclcpp_pkg/helloworld_subscriber
+[4.734s] -- Set runtime path of "/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/my_first_ros_rclcpp_pkg/lib/my_first_ros_rclcpp_pkg/helloworld_subscriber" to ""
+[4.734s] -- Installing: /home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/my_first_ros_rclcpp_pkg/share/ament_index/resource_index/package_run_dependencies/my_first_ros_rclcpp_pkg
+[4.734s] -- Installing: /home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/my_first_ros_rclcpp_pkg/share/ament_index/resource_index/parent_prefix_path/my_first_ros_rclcpp_pkg
+[4.734s] -- Installing: /home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/my_first_ros_rclcpp_pkg/share/my_first_ros_rclcpp_pkg/environment/ament_prefix_path.sh
+[4.734s] -- Installing: /home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/my_first_ros_rclcpp_pkg/share/my_first_ros_rclcpp_pkg/environment/ament_prefix_path.dsv
+[4.734s] -- Installing: /home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/my_first_ros_rclcpp_pkg/share/my_first_ros_rclcpp_pkg/environment/path.sh
+[4.734s] -- Installing: /home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/my_first_ros_rclcpp_pkg/share/my_first_ros_rclcpp_pkg/environment/path.dsv
+[4.734s] -- Installing: /home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/my_first_ros_rclcpp_pkg/share/my_first_ros_rclcpp_pkg/local_setup.bash
+[4.734s] -- Installing: /home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/my_first_ros_rclcpp_pkg/share/my_first_ros_rclcpp_pkg/local_setup.sh
+[4.735s] -- Installing: /home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/my_first_ros_rclcpp_pkg/share/my_first_ros_rclcpp_pkg/local_setup.zsh
+[4.735s] -- Installing: /home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/my_first_ros_rclcpp_pkg/share/my_first_ros_rclcpp_pkg/local_setup.dsv
+[4.735s] -- Installing: /home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/my_first_ros_rclcpp_pkg/share/my_first_ros_rclcpp_pkg/package.dsv
+[4.735s] -- Installing: /home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/my_first_ros_rclcpp_pkg/share/ament_index/resource_index/packages/my_first_ros_rclcpp_pkg
+[4.735s] -- Installing: /home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/my_first_ros_rclcpp_pkg/share/my_first_ros_rclcpp_pkg/cmake/my_first_ros_rclcpp_pkgConfig.cmake
+[4.735s] -- Installing: /home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/my_first_ros_rclcpp_pkg/share/my_first_ros_rclcpp_pkg/cmake/my_first_ros_rclcpp_pkgConfig-version.cmake
+[4.735s] -- Installing: /home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/my_first_ros_rclcpp_pkg/share/my_first_ros_rclcpp_pkg/package.xml
+[4.737s] Invoked command in '/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/build/my_first_ros_rclcpp_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/build/my_first_ros_rclcpp_pkg

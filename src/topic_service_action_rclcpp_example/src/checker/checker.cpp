@@ -23,11 +23,12 @@ Checker::~Checker()
 void Checker::send_goal_total_sum(float goal_sum)
 {
   using namespace std::placeholders;
-
+  
+  // check the client is created.
   if (!this->arithmetic_action_client_){
     RCLCPP_WARN(this->get_logger(), "Action client not initialized");
   }
-
+  // check the server state to communicate.
   if (!this->arithmetic_action_client_->wait_for_action_server(std::chrono::seconds(10))){
     RCLCPP_WARN(this->get_logger(), "Arithmetic action server is not available");
     return;
@@ -52,29 +53,29 @@ void Checker::send_goal_total_sum(float goal_sum)
 /**
  * @brief ROS2 foxy
 */
-// void Checker::get_arithmetic_action_goal(
-//   std::shared_future<GoalHandleArithmeticChecker::SharedPtr> future)
-// {
-//   auto goal_handle = future.get();
-//   if (!goal_handle){
-//     RCLCPP_WARN(this->get_logger(), "Action goal rejected");
-//   } else {
-//     RCLCPP_INFO(this->get_logger(), "Action goal accepted");
-//   }
-// }
-
-/**
- * @brief ROS2 humble
-*/
 void Checker::get_arithmetic_action_goal(
-  GoalHandleArithmeticChecker::SharedPtr goal_handle)
+  std::shared_future<GoalHandleArithmeticChecker::SharedPtr> future)
 {
-  if (goal_handle == nullptr) {
+  auto goal_handle = future.get();
+  if (!goal_handle){
     RCLCPP_WARN(this->get_logger(), "Action goal rejected");
   } else {
     RCLCPP_INFO(this->get_logger(), "Action goal accepted");
   }
 }
+
+/**
+ * @brief ROS2 humble
+*/
+// void Checker::get_arithmetic_action_goal(
+//   GoalHandleArithmeticChecker::SharedPtr goal_handle)
+// {
+//   if (goal_handle == nullptr) {
+//     RCLCPP_WARN(this->get_logger(), "Action goal rejected");
+//   } else {
+//     RCLCPP_INFO(this->get_logger(), "Action goal accepted");
+//   }
+// }
 
 void Checker::get_arithmetic_action_feedback(
   GoalHandleArithmeticChecker::SharedPtr,

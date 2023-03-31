@@ -5,7 +5,7 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "/usr/include/**",
-                "/opt/ros/humble/include/**",
+                "/opt/ros/foxy/include/**",
                 "./src/msg_srv_action_interface_example/",
                 "./src/msg_srv_action_interface_example/msg/**",
                 "./src/msg_srv_action_interface_example/srv/**",

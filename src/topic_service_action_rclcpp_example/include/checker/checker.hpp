@@ -29,12 +29,12 @@ private:
     /**
      * @brief ROS2 foxy
     */
-    // std::shared_future<GoalHandleArithmeticChecker::SharedPtr> future);
+    std::shared_future<GoalHandleArithmeticChecker::SharedPtr> future);
 
     /**
      * @brief ROS2 humble
     */
-    GoalHandleArithmeticChecker::SharedPtr goal_handle);
+    // GoalHandleArithmeticChecker::SharedPtr goal_handle);
   void get_arithmetic_action_feedback(
     GoalHandleArithmeticChecker::SharedPtr,
     const std::shared_ptr<const ArithmeticChecker::Feedback> feedback);

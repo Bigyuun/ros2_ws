@@ -1,0 +1,22 @@
+[0.012s] Invoking command in '/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/build/my_first_ros_rclcpp_pkg': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/my_first_ros_rclcpp_pkg -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/my_first_ros_rclcpp_pkg
+[0.043s] -- The C compiler identification is GNU 9.4.0
+[0.075s] -- The CXX compiler identification is GNU 9.4.0
+[0.078s] -- Check for working C compiler: /usr/bin/cc
+[0.118s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.119s] -- Detecting C compiler ABI info
+[0.161s] -- Detecting C compiler ABI info - done
+[0.169s] -- Detecting C compile features
+[0.169s] -- Detecting C compile features - done
+[0.170s] -- Check for working CXX compiler: /usr/bin/c++
+[0.218s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.218s] -- Detecting CXX compiler ABI info
+[0.267s] -- Detecting CXX compiler ABI info - done
+[0.275s] -- Detecting CXX compile features
+[0.275s] -- Detecting CXX compile features - done
+[0.277s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.292s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.292s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.386s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.397s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.423s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.427s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)

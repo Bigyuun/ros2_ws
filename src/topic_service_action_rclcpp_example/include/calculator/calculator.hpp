@@ -33,10 +33,8 @@ private:
   rclcpp_action::GoalResponse handle_goal(
     const rclcpp_action::GoalUUID & uuid,
     std::shared_ptr<const ArithmeticChecker::Goal> goal);
-
   rclcpp_action::CancelResponse handle_cancle(
     const std::shared_ptr<GoalHandleArithmeticChecker> goal_handle);
-  
   void execute_checker(const std::shared_ptr<GoalHandleArithmeticChecker> goal_handle);
 
   rclcpp::Subscription<ArithmeticArgument>::SharedPtr arithmetic_argument_subscriber_;
