@@ -8,6 +8,14 @@
 
 #include "calculator/calculator.hpp"
 
+void print_help()
+{
+  printf("For ROS 2 topic subscriber, service server, action server rclcpp examples:\n");
+  printf("calculator [-h]\n");
+  printf("Options:\n");
+  printf("\t-h Help           : Print this help function.\n");
+}
+
 int main(int argc, char * argv[])
 {
   if(rcutils_cli_option_exist(argv, argv + argc, "-h")){
@@ -26,10 +34,3 @@ int main(int argc, char * argv[])
   return 0;
 }
 
-void print_help()
-{
-  printf("For ROS 2 topic subscriber, service server, action server rclcpp examples:\n");
-  printf("calculator [-h]\n");
-  printf("Options:\n");
-  printf("\t-h Help           : Print this help function.\n");
-}

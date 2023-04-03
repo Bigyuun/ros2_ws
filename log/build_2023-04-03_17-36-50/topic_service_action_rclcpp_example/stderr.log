@@ -1,0 +1,19 @@
+CMake Deprecation Warning at CMakeLists.txt:5 (cmake_policy):
+  The OLD behavior for policy CMP0009 will be removed from a future version
+  of CMake.
+
+  The cmake-policies(7) manual explains that the OLD behaviors of all
+  policies are deprecated and that a policy should be set to OLD only under
+  specific short-term circumstances.  Projects should be ported to the NEW
+  behavior and not rely on setting a policy to OLD.
+
+
+CMake Warning (dev) at ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:62 (file):
+  Policy CMP0009 is not set: FILE GLOB_RECURSE calls should not follow
+  symlinks by default.  Run "cmake --help-policy CMP0009" for policy details.
+  Use the cmake_policy command to set the policy and suppress this warning.
+Call Stack (most recent call first):
+  ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:317 (ament_cmake_symlink_install_directory)
+  cmake_install.cmake:41 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+

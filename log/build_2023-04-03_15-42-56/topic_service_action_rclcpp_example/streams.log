@@ -1,0 +1,99 @@
+[0.007s] Invoking command in '/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/build/topic_service_action_rclcpp_example': AMENT_PREFIX_PATH=/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/msg_srv_action_interface_example:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/msg_srv_action_interface_example:/opt/ros/foxy LD_LIBRARY_PATH=/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/msg_srv_action_interface_example/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/msg_srv_action_interface_example/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/topic_service_action_rclcpp_example
+[0.014s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.029s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.123s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.127s] -- Found msg_srv_action_interface_example: 0.0.0 (/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/msg_srv_action_interface_example/share/msg_srv_action_interface_example/cmake)
+[0.140s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.142s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.218s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.309s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.332s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.333s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.426s] -- Found rclcpp_action: 2.4.2 (/opt/ros/foxy/share/rclcpp_action/cmake)
+[0.449s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.491s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.491s] -- Configured cppcheck include dirs: /home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/include
+[0.491s] -- Configured cppcheck exclude dirs and/or files: 
+[0.492s] -- Added test 'lint_cmake' to check CMake code style
+[0.493s] -- Added test 'uncrustify' to check C / C++ code style
+[0.493s] -- Configured uncrustify additional arguments: 
+[0.493s] -- Added test 'xmllint' to check XML markup files
+[0.495s] -- Configuring done
+[0.509s] -- Generating done
+[0.511s] -- Build files have been written to: /home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/build/topic_service_action_rclcpp_example
+[0.516s] Invoked command in '/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/build/topic_service_action_rclcpp_example' returned '0': AMENT_PREFIX_PATH=/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/msg_srv_action_interface_example:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/msg_srv_action_interface_example:/opt/ros/foxy LD_LIBRARY_PATH=/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/msg_srv_action_interface_example/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/msg_srv_action_interface_example/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/topic_service_action_rclcpp_example
+[0.517s] Invoking command in '/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/build/topic_service_action_rclcpp_example': AMENT_PREFIX_PATH=/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/msg_srv_action_interface_example:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/msg_srv_action_interface_example:/opt/ros/foxy LD_LIBRARY_PATH=/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/msg_srv_action_interface_example/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/msg_srv_action_interface_example/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/build/topic_service_action_rclcpp_example -- -j20 -l20
+[0.546s] [35m[1mScanning dependencies of target checker[0m
+[0.547s] [35m[1mScanning dependencies of target operator[0m
+[0.547s] [35m[1mScanning dependencies of target calculator[0m
+[0.547s] [35m[1mScanning dependencies of target argument[0m
+[0.569s] [ 20%] [32mBuilding CXX object CMakeFiles/argument.dir/src/arithmetic/argument.cpp.o[0m
+[0.569s] [ 20%] [32mBuilding CXX object CMakeFiles/operator.dir/src/arithmetic/operator.cpp.o[0m
+[0.573s] [ 30%] [32mBuilding CXX object CMakeFiles/checker.dir/src/checker/main.cpp.o[0m
+[0.573s] [ 40%] [32mBuilding CXX object CMakeFiles/checker.dir/src/checker/checker.cpp.o[0m
+[0.573s] [ 50%] [32mBuilding CXX object CMakeFiles/calculator.dir/src/calculator/main.cpp.o[0m
+[0.576s] [ 60%] [32mBuilding CXX object CMakeFiles/calculator.dir/src/calculator/calculator.cpp.o[0m
+[0.576s] [01m[K/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/src/arithmetic/operator.cpp:1:9:[m[K [01;35m[Kwarning: [m[K#pragma once in main file
+[0.576s]     1 | #pragma [01;35m[Konce[m[K
+[0.576s]       |         [01;35m[K^~~~[m[K
+[0.580s] [01m[K/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/src/calculator/calculator.cpp:1:9:[m[K [01;35m[Kwarning: [m[K#pragma once in main file
+[0.580s]     1 | #pragma [01;35m[Konce[m[K
+[0.580s]       |         [01;35m[K^~~~[m[K
+[0.607s] [01m[K/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/src/arithmetic/operator.cpp:9:17:[m[K [01;31m[Kerror: [m[Kmissing terminating > character
+[0.608s]     9 | #include <memory
+[0.608s]       |                 [01;31m[K^[m[K
+[0.642s] [01m[K/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/src/calculator/calculator.cpp:77:43:[m[K [01;35m[Kwarning: [m[Kmulti-character character constant [[01;35m[K-Wmultichar[m[K]
+[0.642s]    77 |            std::to_string(argument_b_) << [01;35m[K' = '[m[K <<
+[0.643s]       |                                           [01;35m[K^~~~~[m[K
+[1.346s] [01m[K/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/src/arithmetic/argument.cpp:[m[K In constructor ‘[01m[KArgument::Argument(const rclcpp::NodeOptions&)[m[K’:
+[1.346s] [01m[K/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/src/arithmetic/argument.cpp:22:10:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint8_t qos_depth[m[K’
+[1.346s]    22 |   int8_t [01;31m[Kqos_depth[m[K = this->get_parameter("min_random_num").get_value<int8_t>();
+[1.346s]       |          [01;31m[K^~~~~~~~~[m[K
+[1.346s] [01m[K/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/src/arithmetic/argument.cpp:20:10:[m[K [01;36m[Knote: [m[K‘[01m[Kint8_t qos_depth[m[K’ previously declared here
+[1.346s]    20 |   int8_t [01;36m[Kqos_depth[m[K = this->get_parameter("qos_depth").get_value<int8_t>();
+[1.347s]       |          [01;36m[K^~~~~~~~~[m[K
+[1.347s] [01m[K/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/src/arithmetic/argument.cpp:24:10:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint8_t qos_depth[m[K’
+[1.347s]    24 |   int8_t [01;31m[Kqos_depth[m[K = this->get_parameter("max_random_num").get_value<int8_t>();
+[1.347s]       |          [01;31m[K^~~~~~~~~[m[K
+[1.347s] [01m[K/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/src/arithmetic/argument.cpp:20:10:[m[K [01;36m[Knote: [m[K‘[01m[Kint8_t qos_depth[m[K’ previously declared here
+[1.347s]    20 |   int8_t [01;36m[Kqos_depth[m[K = this->get_parameter("qos_depth").get_value<int8_t>();
+[1.347s]       |          [01;36m[K^~~~~~~~~[m[K
+[1.365s] [01m[K/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/src/calculator/main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[1.365s] [01m[K/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/src/calculator/main.cpp:14:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kprint_help[m[K’ was not declared in this scope
+[1.365s]    14 |     [01;31m[Kprint_help[m[K();
+[1.365s]       |     [01;31m[K^~~~~~~~~~[m[K
+[1.471s] [01m[K/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/src/arithmetic/operator.cpp:[m[K In constructor ‘[01m[KOperator::Operator(const rclcpp::NodeOptions&)[m[K’:
+[1.471s] [01m[K/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/src/arithmetic/operator.cpp:24:55:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""s[m[K’
+[1.471s]    24 |   while(!arithmetic_service_client_->wait_for_service([01;31m[K1s[m[K)){
+[1.471s]       |                                                       [01;31m[K^~[m[K
+[1.476s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:40[m[K,
+[1.476s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+[1.476s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[1.476s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[1.476s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[1.476s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[1.476s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[1.476s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.477s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.477s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.477s]                  from [01m[K/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/src/arithmetic/operator.cpp:14[m[K:
+[1.477s] [01m[K/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/src/arithmetic/operator.cpp:[m[K In lambda function:
+[1.477s] [01m[K/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/src/arithmetic/operator.cpp:51:62:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct msg_srv_action_interface_example::srv::ArithmeticOperator_Response_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct msg_srv_action_interface_example::srv::ArithmeticOperator_Response_<std::allocator<void> >[m[K’} has no member named ‘[01m[Karithmetic_result[m[K’; did you mean ‘[01m[Kartimetic_result[m[K’?
+[1.477s]    51 |     RCLCPP_INFO(this->get_logger(), "Result %.2f", response->[01;31m[Karithmetic_result[m[K);
+[1.477s]       |                                                              [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[1.477s] [01m[K/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/src/arithmetic/operator.cpp:[m[K In member function ‘[01m[Kvoid Operator::send_request()[m[K’:
+[1.477s] [01m[K/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/src/arithmetic/operator.cpp:55:3:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[Kauto[m[K’
+[1.477s]    55 |   [01;31m[Kauto[m[K future_result =
+[1.477s]       |   [01;31m[K^~~~[m[K
+[1.590s] make[2]: *** [CMakeFiles/calculator.dir/build.make:63: CMakeFiles/calculator.dir/src/calculator/main.cpp.o] Error 1
+[1.590s] make[2]: *** Waiting for unfinished jobs....
+[1.757s] make[2]: *** [CMakeFiles/operator.dir/build.make:63: CMakeFiles/operator.dir/src/arithmetic/operator.cpp.o] Error 1
+[1.758s] make[1]: *** [CMakeFiles/Makefile2:111: CMakeFiles/operator.dir/all] Error 2
+[1.758s] make[1]: *** Waiting for unfinished jobs....
+[2.317s] make[2]: *** [CMakeFiles/argument.dir/build.make:63: CMakeFiles/argument.dir/src/arithmetic/argument.cpp.o] Error 1
+[2.317s] make[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/argument.dir/all] Error 2
+[2.659s] [ 70%] [32m[1mLinking CXX executable checker[0m
+[2.775s] [ 70%] Built target checker
+[4.311s] make[1]: *** [CMakeFiles/Makefile2:138: CMakeFiles/calculator.dir/all] Error 2
+[4.312s] make: *** [Makefile:141: all] Error 2
+[4.315s] Invoked command in '/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/build/topic_service_action_rclcpp_example' returned '2': AMENT_PREFIX_PATH=/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/msg_srv_action_interface_example:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/msg_srv_action_interface_example:/opt/ros/foxy LD_LIBRARY_PATH=/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/msg_srv_action_interface_example/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/msg_srv_action_interface_example/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/build/topic_service_action_rclcpp_example -- -j20 -l20

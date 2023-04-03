@@ -1,0 +1,14 @@
+[01m[K/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/src/calculator/calculator.cpp:1:9:[m[K [01;35m[Kwarning: [m[K#pragma once in main file
+    1 | #pragma [01;35m[Konce[m[K
+      |         [01;35m[K^~~~[m[K
+[01m[K/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/src/calculator/calculator.cpp:77:43:[m[K [01;35m[Kwarning: [m[Kmulti-character character constant [[01;35m[K-Wmultichar[m[K]
+   77 |            std::to_string(argument_b_) << [01;35m[K' = '[m[K <<
+      |                                           [01;35m[K^~~~~[m[K
+CMake Error at ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:100 (message):
+  ament_cmake_symlink_install_directory() can't find
+  '/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/launch'
+Call Stack (most recent call first):
+  ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:317 (ament_cmake_symlink_install_directory)
+  cmake_install.cmake:41 (include)
+
+

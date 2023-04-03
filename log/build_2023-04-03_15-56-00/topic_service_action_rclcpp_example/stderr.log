@@ -1,0 +1,18 @@
+[01m[K/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/src/arithmetic/operator.cpp:1:9:[m[K [01;35m[Kwarning: [m[K#pragma once in main file
+    1 | #pragma [01;35m[Konce[m[K
+      |         [01;35m[K^~~~[m[K
+[01m[K/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/src/calculator/calculator.cpp:1:9:[m[K [01;35m[Kwarning: [m[K#pragma once in main file
+    1 | #pragma [01;35m[Konce[m[K
+      |         [01;35m[K^~~~[m[K
+[01m[K/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/src/calculator/calculator.cpp:77:43:[m[K [01;35m[Kwarning: [m[Kmulti-character character constant [[01;35m[K-Wmultichar[m[K]
+   77 |            std::to_string(argument_b_) << [01;35m[K' = '[m[K <<
+      |                                           [01;35m[K^~~~~[m[K
+[01m[K/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/src/calculator/calculator.cpp:[m[K In lambda function:
+[01m[K/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/src/calculator/calculator.cpp:72:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct msg_srv_action_interface_example::srv::ArithmeticOperator_Response_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct msg_srv_action_interface_example::srv::ArithmeticOperator_Response_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kartimetic_result[m[K’; did you mean ‘[01m[Karithmetic_result[m[K’?
+   72 |     response->[01;31m[Kartimetic_result[m[K = argument_result_;
+      |               [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |               [32m[Karithmetic_result[m[K
+make[2]: *** [CMakeFiles/calculator.dir/build.make:76: CMakeFiles/calculator.dir/src/calculator/calculator.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:138: CMakeFiles/calculator.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [Makefile:141: all] Error 2

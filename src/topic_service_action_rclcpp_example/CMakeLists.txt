@@ -1,5 +1,8 @@
-cmake_minimum_required(VERSION 3.8)
+cmake_minimum_required(VERSION 3.5)
 project(topic_service_action_rclcpp_example)
+
+# If it occurs 'waring for project developers', set this command.
+#cmake_policy(SET CMP0009 OLD)
 
 # Default to C99
 if(NOT CMAKE_C_STANDARD)
@@ -23,16 +26,53 @@ find_package(rclcpp REQUIRED)
 find_package(rclcpp_action REQUIRED)
 
 include_directories(include)
-
-# Build
-# add_executable(argument src/arithmetic/argument.cpp)
-
-# add_executable(calculator src/calcul)
-
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 
+# Build
+add_executable(argument src/arithmetic/argument.cpp)
+ament_target_dependencies(argument
+  msg_srv_action_interface_example
+  rclcpp
+)
+
+add_executable(calculator src/calculator/main.cpp src/calculator/calculator.cpp)
+ament_target_dependencies(calculator
+  msg_srv_action_interface_example
+  rclcpp
+  rclcpp_action
+)
+
+add_executable(operator src/arithmetic/operator.cpp)
+ament_target_dependencies(operator
+  msg_srv_action_interface_example
+  rclcpp
+)
+
+add_executable(checker src/checker/main.cpp src/checker/checker.cpp)
+ament_target_dependencies(checker
+  msg_srv_action_interface_example
+  rclcpp
+  rclcpp_action
+)
+
+# Install
+install(TARGETS
+  argument
+  calculator
+  operator
+  checker
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+install(DIRECTORY launch param
+  DESTINATION share/${PROJECT_NAME}
+)
+
+# Test
+# DY
+# if test - CLI : '$ colcon test'
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights
@@ -45,4 +85,5 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
+# Macro for ament package
 ament_package()

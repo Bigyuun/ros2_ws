@@ -1,0 +1,95 @@
+-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found msg_srv_action_interface_example: 0.0.0 (/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/msg_srv_action_interface_example/share/msg_srv_action_interface_example/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rclcpp_action: 2.4.2 (/opt/ros/foxy/share/rclcpp_action/cmake)
+-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/include
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/build/topic_service_action_rclcpp_example
+[35m[1mScanning dependencies of target checker[0m
+[35m[1mScanning dependencies of target operator[0m
+[35m[1mScanning dependencies of target calculator[0m
+[35m[1mScanning dependencies of target argument[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/argument.dir/src/arithmetic/argument.cpp.o[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/operator.dir/src/arithmetic/operator.cpp.o[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/checker.dir/src/checker/main.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/checker.dir/src/checker/checker.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/calculator.dir/src/calculator/main.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/calculator.dir/src/calculator/calculator.cpp.o[0m
+[01m[K/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/src/arithmetic/operator.cpp:1:9:[m[K [01;35m[Kwarning: [m[K#pragma once in main file
+    1 | #pragma [01;35m[Konce[m[K
+      |         [01;35m[K^~~~[m[K
+[01m[K/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/src/calculator/calculator.cpp:1:9:[m[K [01;35m[Kwarning: [m[K#pragma once in main file
+    1 | #pragma [01;35m[Konce[m[K
+      |         [01;35m[K^~~~[m[K
+[01m[K/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/src/arithmetic/operator.cpp:9:17:[m[K [01;31m[Kerror: [m[Kmissing terminating > character
+    9 | #include <memory
+      |                 [01;31m[K^[m[K
+[01m[K/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/src/calculator/calculator.cpp:77:43:[m[K [01;35m[Kwarning: [m[Kmulti-character character constant [[01;35m[K-Wmultichar[m[K]
+   77 |            std::to_string(argument_b_) << [01;35m[K' = '[m[K <<
+      |                                           [01;35m[K^~~~~[m[K
+[01m[K/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/src/arithmetic/argument.cpp:[m[K In constructor ‘[01m[KArgument::Argument(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/src/arithmetic/argument.cpp:22:10:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint8_t qos_depth[m[K’
+   22 |   int8_t [01;31m[Kqos_depth[m[K = this->get_parameter("min_random_num").get_value<int8_t>();
+      |          [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/src/arithmetic/argument.cpp:20:10:[m[K [01;36m[Knote: [m[K‘[01m[Kint8_t qos_depth[m[K’ previously declared here
+   20 |   int8_t [01;36m[Kqos_depth[m[K = this->get_parameter("qos_depth").get_value<int8_t>();
+      |          [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/src/arithmetic/argument.cpp:24:10:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint8_t qos_depth[m[K’
+   24 |   int8_t [01;31m[Kqos_depth[m[K = this->get_parameter("max_random_num").get_value<int8_t>();
+      |          [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/src/arithmetic/argument.cpp:20:10:[m[K [01;36m[Knote: [m[K‘[01m[Kint8_t qos_depth[m[K’ previously declared here
+   20 |   int8_t [01;36m[Kqos_depth[m[K = this->get_parameter("qos_depth").get_value<int8_t>();
+      |          [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/src/calculator/main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/src/calculator/main.cpp:14:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kprint_help[m[K’ was not declared in this scope
+   14 |     [01;31m[Kprint_help[m[K();
+      |     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/src/arithmetic/operator.cpp:[m[K In constructor ‘[01m[KOperator::Operator(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/src/arithmetic/operator.cpp:24:55:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""s[m[K’
+   24 |   while(!arithmetic_service_client_->wait_for_service([01;31m[K1s[m[K)){
+      |                                                       [01;31m[K^~[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/src/arithmetic/operator.cpp:14[m[K:
+[01m[K/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/src/arithmetic/operator.cpp:[m[K In lambda function:
+[01m[K/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/src/arithmetic/operator.cpp:51:62:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct msg_srv_action_interface_example::srv::ArithmeticOperator_Response_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct msg_srv_action_interface_example::srv::ArithmeticOperator_Response_<std::allocator<void> >[m[K’} has no member named ‘[01m[Karithmetic_result[m[K’; did you mean ‘[01m[Kartimetic_result[m[K’?
+   51 |     RCLCPP_INFO(this->get_logger(), "Result %.2f", response->[01;31m[Karithmetic_result[m[K);
+      |                                                              [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/src/arithmetic/operator.cpp:[m[K In member function ‘[01m[Kvoid Operator::send_request()[m[K’:
+[01m[K/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/src/arithmetic/operator.cpp:55:3:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[Kauto[m[K’
+   55 |   [01;31m[Kauto[m[K future_result =
+      |   [01;31m[K^~~~[m[K
+make[2]: *** [CMakeFiles/calculator.dir/build.make:63: CMakeFiles/calculator.dir/src/calculator/main.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/operator.dir/build.make:63: CMakeFiles/operator.dir/src/arithmetic/operator.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:111: CMakeFiles/operator.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/argument.dir/build.make:63: CMakeFiles/argument.dir/src/arithmetic/argument.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/argument.dir/all] Error 2
+[ 70%] [32m[1mLinking CXX executable checker[0m
+[ 70%] Built target checker
+make[1]: *** [CMakeFiles/Makefile2:138: CMakeFiles/calculator.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

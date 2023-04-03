@@ -1,0 +1,5 @@
+CMake Error at CMakeLists.txt:5 (cmake_policy):
+  cmake_policy SET must be given exactly 2 additional arguments.
+
+
+make: *** [Makefile:458: cmake_check_build_system] Error 1

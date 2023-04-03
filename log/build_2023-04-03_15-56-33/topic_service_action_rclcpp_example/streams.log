@@ -1,0 +1,31 @@
+[0.007s] Invoking command in '/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/build/topic_service_action_rclcpp_example': AMENT_PREFIX_PATH=/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/msg_srv_action_interface_example:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/msg_srv_action_interface_example:/opt/ros/foxy LD_LIBRARY_PATH=/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/msg_srv_action_interface_example/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/msg_srv_action_interface_example/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/build/topic_service_action_rclcpp_example -- -j20 -l20
+[0.032s] [35m[1mScanning dependencies of target calculator[0m
+[0.041s] [ 20%] Built target operator
+[0.042s] [ 40%] Built target argument
+[0.042s] [ 70%] Built target checker
+[0.050s] [ 80%] [32mBuilding CXX object CMakeFiles/calculator.dir/src/calculator/calculator.cpp.o[0m
+[0.054s] [01m[K/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/src/calculator/calculator.cpp:1:9:[m[K [01;35m[Kwarning: [m[K#pragma once in main file
+[0.054s]     1 | #pragma [01;35m[Konce[m[K
+[0.054s]       |         [01;35m[K^~~~[m[K
+[0.116s] [01m[K/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/src/calculator/calculator.cpp:77:43:[m[K [01;35m[Kwarning: [m[Kmulti-character character constant [[01;35m[K-Wmultichar[m[K]
+[0.116s]    77 |            std::to_string(argument_b_) << [01;35m[K' = '[m[K <<
+[0.116s]       |                                           [01;35m[K^~~~~[m[K
+[3.670s] [ 90%] [32m[1mLinking CXX executable calculator[0m
+[3.841s] [100%] Built target calculator
+[3.853s] Invoked command in '/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/build/topic_service_action_rclcpp_example' returned '0': AMENT_PREFIX_PATH=/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/msg_srv_action_interface_example:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/msg_srv_action_interface_example:/opt/ros/foxy LD_LIBRARY_PATH=/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/msg_srv_action_interface_example/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/msg_srv_action_interface_example/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/build/topic_service_action_rclcpp_example -- -j20 -l20
+[3.873s] Invoking command in '/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/build/topic_service_action_rclcpp_example': AMENT_PREFIX_PATH=/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/msg_srv_action_interface_example:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/msg_srv_action_interface_example:/opt/ros/foxy LD_LIBRARY_PATH=/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/msg_srv_action_interface_example/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/msg_srv_action_interface_example/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/build/topic_service_action_rclcpp_example
+[3.878s] -- Install configuration: ""
+[3.878s] -- Execute custom install script
+[3.879s] -- Symlinking: /home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/topic_service_action_rclcpp_example/lib/topic_service_action_rclcpp_example/argument
+[3.884s] -- Symlinking: /home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/topic_service_action_rclcpp_example/lib/topic_service_action_rclcpp_example/calculator
+[3.890s] -- Symlinking: /home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/topic_service_action_rclcpp_example/lib/topic_service_action_rclcpp_example/operator
+[3.895s] -- Symlinking: /home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/topic_service_action_rclcpp_example/lib/topic_service_action_rclcpp_example/checker
+[3.900s] CMake Error at ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:100 (message):
+[3.900s]   ament_cmake_symlink_install_directory() can't find
+[3.900s]   '/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/src/topic_service_action_rclcpp_example/launch'
+[3.900s] Call Stack (most recent call first):
+[3.900s]   ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:317 (ament_cmake_symlink_install_directory)
+[3.900s]   cmake_install.cmake:41 (include)
+[3.900s] 
+[3.900s] 
+[3.901s] Invoked command in '/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/build/topic_service_action_rclcpp_example' returned '1': AMENT_PREFIX_PATH=/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/msg_srv_action_interface_example:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/msg_srv_action_interface_example:/opt/ros/foxy LD_LIBRARY_PATH=/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/msg_srv_action_interface_example/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/install/msg_srv_action_interface_example/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/bigyun/Desktop/github_repositories-Bigyuun/ros2_ws/build/topic_service_action_rclcpp_example

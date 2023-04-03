@@ -8,4 +8,4 @@ int8 DIVISION = 4
 int8 arithmetic_operator
 ---
 # Response
-float32 artimetic_result
+float32 arithmetic_result

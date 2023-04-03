@@ -1,4 +1,4 @@
-#pragma once
+// #pragma once
 
 #include <fcntl.h>
 #include <getopt.h>
@@ -6,7 +6,7 @@
 #include <unistd.h>
 #include <cstdio>
 #include <iostream>
-#include <memory
+#include <memory>
 #include <string>
 #include <utility>
 
@@ -14,6 +14,8 @@
 #include "rclcpp/rclcpp.hpp"
 #include "rcutils/cmdline_parser.h"
 #include "arithmetic/operator.hpp"
+
+using namespace std::chrono_literals;
 
 Operator::Operator(const rclcpp::NodeOptions & node_options)
 : Node("operator", node_options)
@@ -50,12 +52,11 @@ void Operator::send_request()
     auto response = future.get();
     RCLCPP_INFO(this->get_logger(), "Result %.2f", response->arithmetic_result);
     return;
-  }
+  };
 
-  auto future_result = 
+  auto future_result =
     arithmetic_service_client_->async_send_request(request, response_received_callback); 
 }
-
 
 /**
  * @author DY

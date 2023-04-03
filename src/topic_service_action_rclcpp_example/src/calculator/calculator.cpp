@@ -1,4 +1,3 @@
-#pragma once
 
 #include <memory>
 #include <sstream>
@@ -69,12 +68,12 @@ Calculator::Calculator(const rclcpp::NodeOptions & node_options)
   {
     argument_operator_ = request->arithmetic_operator;
     argument_result_ = this->calculate_given_formula(argument_a_, argument_b_, argument_operator_);
-    response->artimetic_result = argument_result_;
+    response->arithmetic_result = argument_result_;
 
     std::ostringstream oss;
     oss << std::to_string(argument_a_) << ' ' <<
            operator_[argument_operator_-1] << ' ' <<
-           std::to_string(argument_b_) << ' = ' <<
+           std::to_string(argument_b_) << " = " <<
            argument_result_ << std::endl;
     argument_formula_ = oss.str();
 
