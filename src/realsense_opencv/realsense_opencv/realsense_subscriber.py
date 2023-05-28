@@ -22,8 +22,8 @@ class RealSenseSubscriber(Node):
     
   def rgb_frame_callback(self, data):
     self.get_logger().warning("Receiving RGB frame")
-    current_frame = self.br_rgb.imgmsg_to_cv2(data)
-    cv2.imshow("GRB", current_frame)
+    current_frame = self.br_rgb.imgmsg_to_cv2(data, 'bgr8')
+    cv2.imshow("rgb", current_frame)
     cv2.waitKey(1)
 
 def main(args=None):
