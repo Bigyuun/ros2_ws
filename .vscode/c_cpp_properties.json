@@ -1,8 +1,13 @@
 {
     "configurations": [
         {
+            "browse": {
+                "databaseFilename": "${default}",
+                "limitSymbolsToIncludedHeaders": false
+            },
             "name": "Linux",
             "includePath": [
+                "${default}",
                 "${workspaceFolder}/**",
                 "/usr/include/**",
                 "/opt/ros/foxy/include/**",
@@ -15,10 +20,15 @@
                 "./src/topic_service_action_rclcpp_example/src/"
             ],
             "defines": [],
-            "compilerPath": "/usr/bin/gcc",
-            "cStandard": "c17",
-            "cppStandard": "c++17",
-            "intelliSenseMode": "linux-clang-x64"
+            "compilerPath": "/usr/bin/g++",
+            "cStandard": "c99",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "linux-gcc-x64",
+
+            // "compilerPath": "/usr/bin/gcc",
+            // "cStandard": "c17",
+            // "cppStandard": "c++17",
+            // "intelliSenseMode": "linux-clang-x64"
         }
     ],
     "version": 4
