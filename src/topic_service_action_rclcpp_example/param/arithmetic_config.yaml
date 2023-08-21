@@ -1,5 +1,5 @@
 /**: # namespace and node name
-  ros_parameters:
+  ros__parameters:
     qos_depth: 30
     min_random_num: 0.0
     max_random_num: 9.0

@@ -1,3 +1,7 @@
 build/
 install/
+<<<<<<< Updated upstream
 log/
+=======
+log
+>>>>>>> Stashed changes

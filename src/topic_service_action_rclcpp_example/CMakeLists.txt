@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.8)
 project(topic_service_action_rclcpp_example)
 
 # If it occurs 'waring for project developers', set this command.
@@ -24,6 +24,7 @@ find_package(ament_cmake REQUIRED)
 find_package(msg_srv_action_interface_example REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(rclcpp_action REQUIRED)
+find_package(std_msgs REQUIRED)
 
 include_directories(include)
 # uncomment the following section in order to fill in
